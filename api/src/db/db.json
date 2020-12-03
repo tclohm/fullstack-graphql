@@ -3,5 +3,48 @@
     "id": "jBWMVGjm50l6LGwepDoty",
     "username": "pokemon_master"
   },
-  "pet": []
+  "pet": [
+    {
+      "id": "apK4ASFQf71bP-lkM5aCl",
+      "createdAt": 1607025713786,
+      "name": "Charlie",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "RubXh1O3nm-P6Z7m-gUYL",
+      "createdAt": 1607025719967,
+      "name": "Coco",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "sPINZsvPwVqitxEsokgd5",
+      "createdAt": 1607025732680,
+      "name": "Gene Bean",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "Pm_r1wbGFlXnPMsMO9ope",
+      "createdAt": 1607025740427,
+      "name": "Sam",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "PMwa9nMMNQBWRkkfuwfY3",
+      "createdAt": 1607025744414,
+      "name": "Max",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "T5nSNvctiUnuw-8M2eR98",
+      "createdAt": 1607032532752,
+      "name": "Meowth",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    }
+  ]
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
-const Header = () =>
+const Header = () => (
   <header>
     <div className="row">
       <div className="col-xs">
@@ -12,5 +12,6 @@ const Header = () =>
       </div>
     </div>
   </header>
+)
 
 export default withRouter(Header)
