@@ -8,11 +8,11 @@ import './index.css'
 
 const Root = () => (
   <BrowserRouter>
-  	
+  	<ApolloProvider client={client}>
     	<App />
-  
+    </ApolloProvider>
   </BrowserRouter>
-)
+);
 
 ReactDOM.render(<Root />, document.getElementById('app'))
 
