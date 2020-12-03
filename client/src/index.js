@@ -12,7 +12,7 @@ const Root = () => (
     	<App />
     </ApolloProvider>
   </BrowserRouter>
-);
+)
 
 ReactDOM.render(<Root />, document.getElementById('app'))
 
