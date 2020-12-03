@@ -11,7 +11,7 @@ module.exports = {
     pet(_, {id}, {models}) {
       return models.Pet.findOne({id})
     },
-    user(_, _, {models}) {
+    user(_, __, {models}) {
       return models.User.findOne()
     }
   },
@@ -32,7 +32,7 @@ module.exports = {
     }
   },
   User: {
-    pets(users, _, {models}) {
+    pets(user, _, {models}) {
       return models.Pet.findMany({user: user.id})
     }
   }

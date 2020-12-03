@@ -10,7 +10,6 @@ const query = gql``;
 
 export default function Pets () {
   const [modal, setModal] = useState(false)
-  const [] = useQuery()
 
   const onSubmit = input => {
     setModal(false)
