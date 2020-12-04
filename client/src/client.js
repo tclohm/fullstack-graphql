@@ -5,22 +5,22 @@ import { setContext } from 'apollo-link-context'
 import { ApolloLink } from 'apollo-link'
 import gql from 'graphql-tag'
 
-const http = new HttpLink({uri: 'http://localhost:4000/'});
+const link = new HttpLink({uri: 'http://localhost:4000/'});
 
-const delay = setContext(
-	request => 
-	new Promise((success, fail) => {
-		setTimeout(() => {
-			success()
-		}, 800)
-	})
-)
+// const delay = setContext(
+// 	request => 
+// 	new Promise((success, fail) => {
+// 		setTimeout(() => {
+// 			success()
+// 		}, 800)
+// 	})
+// )
 
 // MARK: -- middleware
-const link = ApolloLink.from({
-	delay,
-	http
-})
+// const link = new ApolloLink.from({
+// 	delay,
+// 	http
+// })
 
 // MARK: cache
 const cache = new InMemoryCache();

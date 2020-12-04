@@ -28,6 +28,7 @@ const CREATE_PET = gql`
 `;
 
 
+
 export default function Pets () {
   const [modal, setModal] = useState(false)
 
@@ -39,23 +40,23 @@ export default function Pets () {
         query: GET_PETS,
         data: { pets: [addPet, ...pets] }
       })
-    },
-    optimisticResponse: {
-      __typename: "Mutation",
-      addPet: {
-        id: Math.floor(Math.random() * 100000) + "",
-        name: input.name,
-        type: input.type,
-        img: "ok",
-        __typename: "Pet",
-      }
     }
   });
 
   const onSubmit = input => {
     setModal(false)
     addPet({
-      variables: {newPet: input}
+      variables: {newPet: input},     
+      optimisticResponse: {
+        __typename: "Mutation",
+        addPet: {
+          id: Math.floor(Math.random() * 100000) + "",
+          name: input.name,
+          type: input.type,
+          img: "https://via.placeholder.com/300",
+          __typename: "Pet"
+      }
+      }
     })
   }
   
